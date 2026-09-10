@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>OpenBrokkA Support</title>
+<style>
+  :root {
+    --bg: #0b0f14;
+    --card: #121821;
+    --text: #eef2f6;
+    --muted: #9aa7b5;
+    --accent: #f5a623;
+    --border: #1f2833;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.6;
+  }
+  .wrap {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 48px 20px 80px;
+  }
+  header {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  .logo {
+    font-size: 28px;
+    font-weight: 800;
+    letter-spacing: -0.5px;
+  }
+  .logo span { color: var(--accent); }
+  header p {
+    color: var(--muted);
+    margin-top: 8px;
+  }
+  h1 {
+    font-size: 22px;
+    margin: 40px 0 16px;
+  }
+  .card {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    padding: 24px;
+    margin-bottom: 20px;
+  }
+  .contact-btn {
+    display: inline-block;
+    background: var(--accent);
+    color: #fff;
+    text-decoration: none;
+    padding: 12px 22px;
+    border-radius: 10px;
+    font-weight: 600;
+    margin-top: 8px;
+  }
+  details {
+    border-bottom: 1px solid var(--border);
+    padding: 14px 0;
+  }
+  details:last-child { border-bottom: none; }
+  summary {
+    cursor: pointer;
+    font-weight: 600;
+    outline: none;
+  }
+  summary::-webkit-details-marker { color: var(--accent); }
+  details p {
+    color: var(--muted);
+    margin: 10px 0 0;
+  }
+  a { color: var(--accent); }
+  footer {
+    text-align: center;
+    color: var(--muted);
+    font-size: 13px;
+    margin-top: 50px;
+  }
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <img src="openbrokka-logo.png" alt="OpenBrokkA" style="max-width:280px;width:100%;background:#fff;border-radius:12px;padding:10px 16px;">
+      <p>Support Center</p>
+    </header>
+
+    <div class="card">
+      <h1 style="margin-top:0;">Need help?</h1>
+      <p style="color:var(--muted);">Our team typically responds within 24–48 hours.</p>
+      <a class="contact-btn" href="mailto:support@openbrokka.com">Email Support</a>
+      <div style="margin-top:16px;">
+        <p style="margin:0 0 4px;color:var(--muted);">WhatsApp:</p>
+        <p style="margin:0 0 10px;"><a href="https://wa.me/256705679012" target="_blank" rel="noopener">+256 705 679 012</a></p>
+        <p style="margin:0 0 4px;color:var(--muted);">Call:</p>
+        <p style="margin:0;"><a href="tel:+256782662239">+256 782 662 239</a></p>
+      </div>
+    </div>
+
+    <div class="card" style="text-align:center;">
+      <p style="margin:0 0 12px;color:var(--muted);">Get the OpenBrokkA app</p>
+      <a class="contact-btn" style="background:#1f2833;border:1px solid var(--border);" href="https://play.google.com/store/apps/details?id=com.openbrokka.app" target="_blank" rel="noopener">Download on Google Play</a>
+    </div>
+
+    <h1>Frequently Asked Questions</h1>
+    <div class="card">
+      <details open>
+        <summary>How do I book a property inspection?</summary>
+        <p>Open a property listing in the app, tap "Book Inspection," choose a time, and complete payment to confirm your slot.</p>
+      </details>
+      <details>
+        <summary>What payment methods are supported?</summary>
+        <p>OpenBrokkA supports Mobile Money (Airtel Money, MTN) and card payments via Pesapal.</p>
+      </details>
+      <details>
+        <summary>How do I upload a property listing?</summary>
+        <p>Property uploads are done through the OpenBrokkA Broker app, available to verified brokers. If you're a broker without access, contact support to get set up.</p>
+      </details>
+      <details>
+        <summary>I didn't receive a payment confirmation. What should I do?</summary>
+        <p>Check your Bookings tab first. If the payment doesn't reflect within a few minutes, email us with your transaction reference and we'll look into it.</p>
+      </details>
+      <details>
+        <summary>How do I delete my account or data?</summary>
+        <p>Email support@openbrokka.com with the request and we'll process it within a few business days.</p>
+      </details>
+      <details>
+        <summary>How do I report an issue with a listing or a broker?</summary>
+        <p>Use the "Customer Care" button in the app to call us directly or write us a message.</p>
+      </details>
+    </div>
+
+    <h1>Contact Us</h1>
+    <div class="card">
+      <p style="margin:0 0 6px;"><strong>Email:</strong> <a href="mailto:support@openbrokka.com">support@openbrokka.com</a></p>
+      <p style="margin:0;color:var(--muted);">K&amp;RJ Ventures SMC Ltd — Kampala, Uganda</p>
+    </div>
+
+    <footer>
+      &copy; <span id="year"></span> OpenBrokkA · K&amp;RJ Ventures SMC Ltd. All rights reserved.
+    </footer>
+  </div>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
